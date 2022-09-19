@@ -3,39 +3,35 @@ module k8s.io/minikube
 go 1.16
 
 require (
-	cloud.google.com/go/storage v1.13.0
-	contrib.go.opencensus.io/exporter/stackdriver v0.12.1
-	github.com/Azure/azure-sdk-for-go v42.3.0+incompatible
+	cloud.google.com/go/iam v0.4.0 // indirect
+	cloud.google.com/go/storage v1.22.1
+	contrib.go.opencensus.io/exporter/stackdriver v0.13.14
 	github.com/GoogleCloudPlatform/opentelemetry-operations-go/exporter/trace v0.16.0
-	github.com/Microsoft/go-winio v0.4.15-0.20190919025122-fc70bd9a86b5 // indirect
-	github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 // indirect
 	github.com/Parallels/docker-machine-parallels/v2 v2.0.1
 	github.com/VividCortex/godaemon v0.0.0-20201030160542-15e3f4925a21
 	github.com/blang/semver v3.5.0+incompatible
 	github.com/briandowns/spinner v1.11.1
 	github.com/c4milo/gotoolkit v0.0.0-20170318115440-bcc06269efa9 // indirect
 	github.com/cenkalti/backoff v2.2.1+incompatible
-	github.com/cenkalti/backoff/v4 v4.1.0
+	github.com/cenkalti/backoff/v4 v4.1.2
 	github.com/cheggaaa/pb/v3 v3.0.1
 	github.com/cloudevents/sdk-go/v2 v2.3.1
 	github.com/cloudfoundry-attic/jibber_jabber v0.0.0-20151120183258-bcc4c8345a21
 	github.com/cloudfoundry/jibber_jabber v0.0.0-20151120183258-bcc4c8345a21 // indirect
-	github.com/containerd/continuity v0.0.0-20201208142359-180525291bb7 // indirect
 	github.com/docker/cli v0.0.0-20200303162255-7d407207c304 // indirect
-	github.com/docker/docker v17.12.0-ce-rc1.0.20181225093023-5ddb1d410a8b+incompatible
+	github.com/docker/docker v20.10.14+incompatible
 	github.com/docker/go-units v0.4.0
 	github.com/docker/machine v0.16.2
 	github.com/elazarl/goproxy v0.0.0-20190421051319-9d40249d3c2f
 	github.com/elazarl/goproxy/ext v0.0.0-20190421051319-9d40249d3c2f // indirect
 	github.com/evanphx/json-patch v4.5.0+incompatible // indirect
-	github.com/go-logr/logr v0.3.0 // indirect
 	github.com/golang-collections/collections v0.0.0-20130729185459-604e922904d3
-	github.com/google/go-cmp v0.5.5
-	github.com/google/go-containerregistry v0.4.1
+	github.com/google/go-cmp v0.5.8
+	github.com/google/go-containerregistry v0.5.1
 	github.com/google/go-github v17.0.0+incompatible
 	github.com/google/go-github/v32 v32.1.0
 	github.com/google/slowjam v0.0.0-20200530021616-df27e642fe7b
-	github.com/google/uuid v1.2.0
+	github.com/google/uuid v1.3.0
 	github.com/googleapis/gnostic v0.3.0 // indirect
 	github.com/hashicorp/go-getter v1.5.2
 	github.com/hashicorp/go-retryablehttp v0.6.8
@@ -56,7 +52,7 @@ require (
 	github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51
 	github.com/libvirt/libvirt-go v3.9.0+incompatible
 	github.com/machine-drivers/docker-machine-driver-vmware v0.1.1
-	github.com/mattn/go-isatty v0.0.12
+	github.com/mattn/go-isatty v0.0.14
 	github.com/mitchellh/go-ps v1.0.0
 	github.com/moby/hyperkit v0.0.0-20210108224842-2f061e447e14
 	github.com/olekukonko/tablewriter v0.0.5
@@ -74,30 +70,27 @@ require (
 	github.com/spf13/cobra v1.1.3
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.7.1
-	github.com/xeipuuv/gojsonpointer v0.0.0-20180127040702-4e3ac2762d5f // indirect
-	github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415 // indirect
 	github.com/xeipuuv/gojsonschema v0.0.0-20180618132009-1d523034197f
 	github.com/zchee/go-vmnet v0.0.0-20161021174912-97ebf9174097
-	go.opencensus.io v0.22.6
-	go.opentelemetry.io/otel v0.17.0
-	go.opentelemetry.io/otel/sdk v0.16.0
-	go.opentelemetry.io/otel/trace v0.17.0
+	go.opencensus.io v0.23.0
+	go.opentelemetry.io/otel v1.6.1
+	go.opentelemetry.io/otel/sdk v1.6.1
+	go.opentelemetry.io/otel/trace v1.6.1
 	golang.org/x/build v0.0.0-20190927031335-2835ba2e683f
-	golang.org/x/crypto v0.0.0-20201002170205-7f63de1d35b0
+	golang.org/x/crypto v0.0.0-20211215153901-e495a2d5b3d3
 	golang.org/x/exp v0.0.0-20200224162631-6cc2880d07d6
-	golang.org/x/mod v0.4.1
-	golang.org/x/oauth2 v0.0.0-20210113205817-d3ed898aa8a3
-	golang.org/x/sync v0.0.0-20201207232520-09787c993a3a
-	golang.org/x/sys v0.0.0-20210124154548-22da62e12c0c
-	golang.org/x/text v0.3.4
-	google.golang.org/api v0.40.0
+	golang.org/x/mod v0.6.0-dev.0.20220106191415-9b9b3d81d5e3
+	golang.org/x/oauth2 v0.0.0-20220622183110-fd043fe589d2
+	golang.org/x/sync v0.0.0-20220601150217-0de741cfad7f
+	golang.org/x/sys v0.0.0-20220624220833-87e55d714810
+	golang.org/x/text v0.3.7
+	google.golang.org/api v0.93.0
 	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22 // indirect
 	gopkg.in/yaml.v2 v2.4.0
-	gotest.tools/v3 v3.0.2 // indirect
-	k8s.io/api v0.18.8
-	k8s.io/apimachinery v0.18.8
-	k8s.io/client-go v0.18.8
-	k8s.io/klog/v2 v2.4.0
+	k8s.io/api v0.23.5
+	k8s.io/apimachinery v0.23.5
+	k8s.io/client-go v0.23.5
+	k8s.io/klog/v2 v2.40.1
 	k8s.io/kubectl v0.0.0
 	k8s.io/kubernetes v1.18.5
 	sigs.k8s.io/sig-storage-lib-external-provisioner v4.0.0+incompatible // indirect
